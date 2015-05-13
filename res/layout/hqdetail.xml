@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+	<GridView        
+        android:id="@+id/gridView1"
+        android:horizontalSpacing="5dp"  
+    	android:verticalSpacing="5dp" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.53"
+        android:numColumns="1" >
+    </GridView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gridView1"    
+        android:layout_marginLeft="5dp"    
+        >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#FFACDAE5"
+            android:padding="5px"
+            android:text="审批意见"
+            android:textColor="#000000"
+            
+             />
+
+        <EditText
+            android:id="@+id/de"
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/title"
+            android:padding="5px"
+            android:paddingLeft="6dip"
+            
+            android:textColor="#000000" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/de"
+            android:layout_marginTop="10dp"
+            android:background="#00ff00" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        style="@drawable/shape"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="81dp"
+        android:textSize="19dp"
+        android:background="@drawable/blue_btn"
+        android:textColor ="@color/white"
+        android:text="提交" />
+
+</RelativeLayout>

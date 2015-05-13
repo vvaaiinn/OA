@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"  
+    >  
+
+    
+<TextView    
+    android:layout_width="fill_parent"   
+    android:layout_height="wrap_content"   
+    android:gravity="center"
+    android:textColor="@color/black"	
+    android:text="选择主题样式"  
+    android:textSize="18dp"  
+    />  
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RadioGroup
+            android:id="@+id/rgp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+
+		    <RadioButton 
+		        android:id="@+id/blue"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/black"	        
+		        android:text="深海魅蓝"
+		        />
+		    <RadioButton android:id="@+id/red" 
+		        android:layout_width="wrap_content"
+		         android:layout_height="wrap_content" 	
+		        android:textColor="@color/black"		         
+		         android:text="璀璨艳红"/>
+		</RadioGroup>
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="21dp"
+            android:text="确认主题" 
+            android:background="@drawable/blue_btn"
+            
+            />
+        
+    </RelativeLayout>
+		
+  
+</LinearLayout>

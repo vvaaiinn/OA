@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="发送" />
+
+    <EditText
+        android:id="@+id/GGTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"
+        android:ems="10"
+        android:hint="公告标题" />
+
+    <Spinner
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/GGTitle"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/GGContent"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/send"
+        android:layout_alignLeft="@+id/type"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/type"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="这里是公告内容!!" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="30px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
+        android:text=" 公告标题" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="30px"
+        android:layout_below="@+id/GGTitle"
+        android:layout_marginTop="18dp"
+        android:layout_toLeftOf="@+id/type"
+        android:text="公告类型" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="30px"
+        android:layout_alignBaseline="@+id/GGContent"
+        android:layout_alignBottom="@+id/GGContent"
+        android:layout_toLeftOf="@+id/GGContent"
+        android:text="公告内容" />
+
+</RelativeLayout>

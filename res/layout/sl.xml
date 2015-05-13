@@ -1,0 +1,223 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top_news_listView_item"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:background="@drawable/background_login">
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="50dip" 
+        >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:background="#55FFFFFF"
+            android:clickable="false"
+            android:focusable="false"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:text="申请事项："
+            android:textColor="#000000"
+            android:textSize="16dip" >
+        </TextView>
+
+         <TextView
+            android:id="@+id/textView2"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="35dp"
+            android:background="#55FFFFFF"
+            android:clickable="false"
+            android:focusable="false"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:text="申请时间："
+            android:textColor="#000000"
+            android:textSize="16dip" />
+        
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="35dp"
+            android:background="#55FFFFFF"
+            android:clickable="false"
+            android:focusable="false"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:text="申请人："
+            android:textColor="#000000"
+            android:textSize="16dip" />
+
+       
+        
+      <TextView
+          	android:id="@+id/textView4"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="35dp"
+            android:background="#55FFFFFF"
+            android:clickable="false"
+            android:focusable="false"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:text="当前状态："
+            android:textColor="#000000"
+            android:textSize="16dip" />
+      
+         <TextView
+          	android:id="@+id/textView5"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView4"
+            android:layout_marginTop="35dp"
+            android:background="#55FFFFFF"
+            android:clickable="false"
+            android:focusable="false"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:text="详细信息："
+            android:textColor="#000000"
+            android:textSize="16dip" />
+         
+     <TextView
+          	android:id="@+id/textView6"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView5"
+            android:layout_marginTop="35dp"
+            android:background="#55FFFFFF"
+            android:clickable="false"
+            android:focusable="false"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:text="审批意见："
+            android:textColor="#000000"
+            android:textSize="16dip" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="50dip" 
+        android:layout_marginLeft="30dip"
+        >
+
+       <TextView
+           android:id="@+id/showtitle"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           android:background="#55FFFFFF"
+           android:clickable="false"
+           android:focusable="false"
+           android:paddingLeft="8dip"
+           android:paddingRight="8dip"
+           android:text="请假："
+           android:textColor="#000000"
+           android:textSize="16dip" />
+       
+       
+        <TextView
+           android:id="@+id/showtime"
+           android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/showtitle"
+            android:layout_marginTop="35dp"
+            android:background="#55FFFFFF"
+            android:singleLine="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:text="昨天："
+            android:textColor="#000000"
+            android:textSize="16dip"  />      
+            
+        <TextView
+           android:id="@+id/showname"
+           android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/showtime"
+            android:layout_marginTop="35dp"
+            android:background="#55FFFFFF"
+            android:clickable="false"
+            android:focusable="false"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:text="二狗："
+            android:textColor="#000000"
+            android:textSize="16dip"  />  
+         
+      <TextView
+            android:id="@+id/showstate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/showname"
+            android:layout_marginTop="35dp"
+            android:background="#55FFFFFF"
+            android:clickable="false"
+            android:focusable="false"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:text="未处理"
+            android:textColor="#000000"
+            android:textSize="16dip"  />  
+ 
+        <TextView
+            android:id="@+id/showdetail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/showstate"
+            android:layout_marginTop="35dp"
+            android:background="#55FFFFFF"
+            android:singleLine="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:text="未处理"
+            android:textColor="#000000"
+            android:textSize="16dip"  />      
+            
+     <TextView
+            android:id="@+id/showad"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/showdetail"
+            android:layout_marginTop="35dp"
+            android:background="#55FFFFFF"
+            android:clickable="false"
+            android:focusable="false"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            
+            android:text="准奏"
+            android:textColor="#000000"
+            android:textSize="16dip"  />      
+       
+       
+       
+        
+     </RelativeLayout>
+    
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   
+    <string name="app_name">内蒙古OA</string>
+    <string name="menu_name">Menu</string>
+    <string name="news_show">新闻</string>
+    <string name="sp_show">审批</string>
+    <string name="em_show">邮件</string>
+    <string name="config">设置</string>
+</resources>

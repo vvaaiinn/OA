@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.oa"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application  android:icon="@drawable/n" android:label="@string/app_name">
+      <!-- android:theme="@android:style/Theme.NoTitleBar.Fullscreen" -->  
+      	<activity android:name="com.oa.AppStart"
+      android:screenOrientation="portrait"     
+      >          
+		<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>                  
+
+		</activity>  
+
+      
+      
+        <activity android:name="com.oa.MainActivity"
+                  android:label="@string/app_name" 
+                  
+                  android:screenOrientation="portrait"                  
+                  >
+          
+        </activity>
+
+        <activity android:name="com.oa.Menu"
+                  android:label="@string/menu_name"
+                   android:theme="@style/titleBarStyle"
+                   android:screenOrientation="portrait" 
+                  >
+
+
+        </activity>
+        <activity android:name="com.oa.NewsShow"
+                  android:label="@string/news_show"
+                  android:theme="@style/titleBarStyle"
+                  android:screenOrientation="portrait" 
+                  >
+        </activity>
+        <activity android:name="com.oa.NewsDetail"
+                  android:label="@string/news_show"
+                  android:theme="@style/titleBarStyle"
+                  android:screenOrientation="portrait" 
+                  >
+        </activity>
+        <activity android:name="com.oa.SpShow"
+                  android:label="@string/sp_show"
+                    android:theme="@style/titleBarStyle"
+                    android:screenOrientation="portrait" 
+                   >
+
+        </activity>
+                <activity android:name="com.oa.SpDetail"
+                  android:label="@string/sp_show"
+                   android:theme="@style/titleBarStyle"
+                   android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.oa.EmShow"
+                  android:label="@string/em_show"
+                   android:theme="@style/titleBarStyle"
+                   android:screenOrientation="portrait" >
+        </activity>
+
+        <activity android:name="com.oa.EmDetail"
+                  android:label="@string/em_show"
+                   android:theme="@style/titleBarStyle"
+                   android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.oa.Config"
+                  android:label="@string/config"
+                   android:theme="@style/titleBarStyle"
+                   android:screenOrientation="portrait" >
+        </activity>
+           <activity android:name="com.oa.SendEm"
+                   android:configChanges="orientation|keyboardHidden|locale" 
+                  android:screenOrientation="portrait" 
+                  android:windowSoftInputMode="stateVisible|adjustPan" >
+        </activity>
+ 	 <activity android:name="com.oa.SendGg"
+                   android:configChanges="orientation|keyboardHidden|locale" 
+                  android:screenOrientation="portrait" 
+                  android:windowSoftInputMode="stateVisible|adjustPan" >
+        </activity>   
+        
+ 	         <activity android:name="com.oa.HqShow"
+                   android:theme="@style/titleBarStyle"
+                   android:screenOrientation="portrait" >
+        </activity>
+ 	         <activity android:name="com.oa.HqDetail"
+                   android:theme="@style/titleBarStyle"
+                   android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.oa.ShShow"
+                   android:theme="@style/titleBarStyle"
+                   android:screenOrientation="portrait" >
+        </activity>
+                
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+</manifest>
