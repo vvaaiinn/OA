@@ -19,7 +19,7 @@
 	    android:id="@+id/bottomlist"
 	    android:layout_width="fill_parent"
 	    android:layout_height="56dp"
-	    android:background="#000000"
+	    android:background="#FF0000"
 	    android:orientation="horizontal" >
 		 
 		<LinearLayout 

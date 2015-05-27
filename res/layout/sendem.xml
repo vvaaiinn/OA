@@ -10,16 +10,18 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:text="发送" />
+        android:text="发送"
+         />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
-        android:layout_height="30px"
+        android:layout_height="60px"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/textView2"
         android:layout_marginTop="28dp"
-        android:text=" 收 件 人 " />
+        android:text=" 收 件 人 "
+        android:textSize="17dip" />
 
     <Spinner
         android:id="@+id/type"
@@ -32,7 +34,7 @@
     <EditText
         android:id="@+id/EmailContent"
         android:layout_width="88dp"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_above="@+id/send"
         android:layout_alignLeft="@+id/type"
         android:layout_alignParentRight="true"
@@ -44,31 +46,30 @@
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
-        android:layout_height="30px"
+        android:layout_height="60px"
         android:layout_alignParentTop="true"
         android:layout_alignRight="@+id/textView3"
         android:layout_marginTop="24dp"
-        android:text="  主    题 " />
+        android:text="  主    题 " 
+        android:textSize="17dip"/>
 
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
-        android:layout_height="30px"
+        android:layout_height="60px"
         android:layout_alignRight="@+id/textView3"
         android:layout_alignTop="@+id/EmailContent"
-        android:text="邮件内容" />
+        android:text="邮件内容" 
+        android:textSize="17dip"/>
 
     <EditText
         android:id="@+id/EmailTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/type"
         android:layout_alignParentRight="true"
-        android:layout_toRightOf="@+id/textView3"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
         android:ems="10"
-        android:hint="这里是邮件主题" >
-
-        <requestFocus />
-    </EditText>
+        android:hint="这里是邮件主题" />
 
 </RelativeLayout>

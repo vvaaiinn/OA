@@ -26,9 +26,9 @@
         android:id="@+id/type"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/GGTitle"
         android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/textView2" />
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2" />
 
     <EditText
         android:id="@+id/GGContent"
@@ -45,28 +45,30 @@
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
-        android:layout_height="30px"
+        android:layout_height="60px"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="24dp"
-        android:text=" 公告标题" />
+        android:text=" 公告标题"
+        android:textSize="17dip" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
-        android:layout_height="30px"
+        android:layout_height="60px"
         android:layout_below="@+id/GGTitle"
         android:layout_marginTop="18dp"
-        android:layout_toLeftOf="@+id/type"
-        android:text="公告类型" />
+        android:text=" 公告类型"
+        android:textSize="17dip" />
 
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
-        android:layout_height="30px"
+        android:layout_height="60px"
         android:layout_alignBaseline="@+id/GGContent"
         android:layout_alignBottom="@+id/GGContent"
         android:layout_toLeftOf="@+id/GGContent"
-        android:text="公告内容" />
+        android:text=" 公告内容" 
+        android:textSize="17dip" />
 
 </RelativeLayout>
